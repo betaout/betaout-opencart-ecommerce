@@ -1,0 +1,77 @@
+<modification>
+	<id><![CDATA[InaneCoding Betaout OpenCart mod v0.4 for OC 2.x]]></id>
+	<version><![CDATA[0.4]]></version>
+	<vqmver><![CDATA[2.1.6]]></vqmver>
+	<author><![CDATA[Kapil / Betaout.in]]></author>
+        
+        
+	<file path="catalog/controller/common/" name="footer.php">
+		<operation>
+			<search position="before"><![CDATA[$data['powered']]]></search>
+			<add><![CDATA[
+		// BOF - Betaout Opencart mod
+		$this->load->model('tool/betaout');
+		$data['betaout_footer_text'] = $this->model_tool_betaout->getFooterText();
+		// EOF - Betaout Opencart mod
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/*/template/common/" name="footer.tpl">
+		<operation>
+			<search position="before"><![CDATA[</body>]]></search>
+			<add><![CDATA[
+                        <?php echo $betaout_footer_text; ?> 
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/checkout/" name="cart.php">
+		<operation>
+			<search position="after"><![CDATA[$this->cart->remove(]]></search>
+			<add><![CDATA[
+			// BOF - Betaout Opencart mod
+			$this->load->model('tool/betaout');
+			$this->model_tool_betaout->trackEcommerceCartUpdate();
+			// EOF - Betaout Opencart mod
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[$this->cart->update(]]></search>
+			<add><![CDATA[
+			// BOF - Betaout Opencart mod
+                            $this->load->model('tool/betaout');
+                            $this->model_tool_betaout->track();
+			// EOF - Betaout Opencart mod
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[$this->cart->add(]]></search>
+			<add><![CDATA[
+				// BOF - Betaout Opencart mod
+				$this->load->model('tool/betaout');
+                            	//$this->model_tool_betaout->track();
+				$this->model_tool_betaout->trackEcommerceCartUpdate();
+				// EOF - Betaout Opencart mod
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/checkout/" name="success.php">
+		<operation>
+			<search position="after"><![CDATA[function index() {]]></search>
+			<add><![CDATA[
+		// BOF - Betaout Opencart mod
+		if ( isset($this->session->data['order_id']) and (  !empty($this->session->data['order_id']))  ) {
+			$this->session->data['last_order_id']= $this->session->data['order_id'];
+			
+			$this->load->model('tool/betaout');
+			$this->model_tool_betaout->trackEcommerceOrder($this->session->data['last_order_id']);
+		}
+
+		// EOF - Betaout Opencart mod
+			]]></add>
+		</operation>
+	</file>     
+	
+        
+</modification>
+
+
