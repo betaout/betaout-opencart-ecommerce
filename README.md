@@ -46,7 +46,8 @@ INSTALL
 
 
 a) "API Key" - This is your API Key . Get this from the Click  Tab 'Idea & Docs ' then APIKEY tab on your Betaout admin panel.
-e) "Project Id" - This is your  Project Id. Get this from the Click  Tab 'Idea & Docs ' then APIKEY tab on your Betaout admin panel
+
+b) "Project Id" - This is your  Project Id. Get this from the Click  Tab 'Idea & Docs ' then APIKEY tab on your Betaout admin panel
 
 
 
