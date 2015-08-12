@@ -25,14 +25,13 @@ IMPORTANT
 ---------
 1. Requires VQmod installed (Highly recommended - https://github.com/vqmod/vqmod/ ).
 
-2. Requires Piwik installed.
 
-3. The default install assumes that Piwik is installed to the '/piwik/' folder at the root of your OpenCart site.
+2. The default install assumes that Piwik is installed to the '/piwik/' folder at the root of your OpenCart site.
 
-4. The default install assumes that your OpenCart Admin directory is in the '/admin/' folder at the root of your OpenCart site.
+3. The default install assumes that your OpenCart Admin directory is in the '/admin/' folder at the root of your OpenCart site.
 If you have used a custom Admin path then please place all files from 'betaout-opencart-ecommerce/admin/' to your custom OpenCart Admin folder.
 
-5. FOR OPENCART 2.0 or higher! Only tested on OpenCart 2.0.2.0 with VQmod 2.5.1, and Betaout 1.0- if you are having issues please make sure to update your versions
+4. FOR OPENCART 2.0 or higher! Only tested on OpenCart 2.0.2.0 with VQmod 2.5.1, and Betaout 1.0- if you are having issues please make sure to update your versions
 (may well work on others - please tell me what you find out!)
 
 
