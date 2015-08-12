@@ -2,13 +2,15 @@
 Betaout OpenCart Ecommerce VQmod
 ------------------------------------------------------
 Source Repository:	https://github.com/betaout/betaout-opencart-ecommerce
+
 Author:			Rohit,Kapil  / www.betaout.com
+
 Version:		0.1
+
 Release Date:		2015-08-13
+
 License:		GNU General Public License (GPL) version 3
 ------------------------------------------------------
-
-
 
 DESCRIPTION
 -----------
