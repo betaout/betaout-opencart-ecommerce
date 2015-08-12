@@ -71,7 +71,7 @@ This is the first release for OC2.x and would benefit from further feedback. Ple
 
 1) There is only  track page views / cart add/updates/remove / orders.
 
-3) The cart tracking uses the main product 'price' attribute, not taking into account special offers / taxes. However ecommerce orders do correctly take account of specials & taxes.
+2) The cart tracking uses the main product 'price' attribute, not taking into account special offers / taxes. However ecommerce orders do correctly take account of specials & taxes.
 
 
 
