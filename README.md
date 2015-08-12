@@ -34,6 +34,7 @@ IMPORTANT
 If you have used a custom Admin path then please place all files from 'betaout-opencart-ecommerce/admin/' to your custom OpenCart Admin folder.
 
 4. FOR OPENCART 2.0 or higher! Only tested on OpenCart 2.0.2.0 with VQmod 2.5.1, and Betaout 1.0- if you are having issues please make sure to update your versions
+
 (may well work on others - please tell me what you find out!)
 
 
@@ -41,7 +42,9 @@ If you have used a custom Admin path then please place all files from 'betaout-o
 INSTALL
 -------
 1) Upload the contents of the 'betaout-opencart-ecommerce' directory to the root of your OpenCart site.
+
 2) Login to your OpenCart admin, go to the Extensions -> Modules page, and click 'Install' next to 'Betaout OpenCart Ecommerce VQmod'.
+
 3) After install, click 'Edit' next to 'Betaout OpenCart Ecommerce VQmod', and on the settings page enter the details about the betaout installation;
 
 
@@ -56,6 +59,7 @@ b) "Project Id" - This is your  Project Id. Get this from the Click  Tab 'Idea &
 UNINSTALL
 ---------
 In OpenCart admin, go to the Extensions -> Modules page, and simply click 'Uninstall' next to 'Betaout OpenCart Ecommerce VQmod'.
+
 This will ensure the configuration settings are deleted and that none of the main functions of the mod will run.
 Some files will still remain - however these should be perfectly safe and not affect anything but to fully remove please delete all files which you uploaded during the install.
 
@@ -64,7 +68,9 @@ Some files will still remain - however these should be perfectly safe and not af
 LIMITATIONS
 -----------
 This is the first release for OC2.x and would benefit from further feedback. Please report any bugs found!
+
 1) There is only  track page views / cart add/updates/remove / orders.
+
 3) The cart tracking uses the main product 'price' attribute, not taking into account special offers / taxes. However ecommerce orders do correctly take account of specials & taxes.
 
 
@@ -81,8 +87,11 @@ First pre-release version.
 SUPPORT
 -------
 I'm happy to help if you have any problems (though can't promise large amounts of time).
+
 I'm also keen to get your feedback (dont be afraid to be critical if I've done something wrong!).
+
 It would be great to hear of your experiences and what could be improved.
+
 You can contact me using the form on https://www.betaout.com/contact-us
 
 You can see the current bugs/features being worked on at https://github.com/betaout/betaout-opencart-ecommerce/issues
